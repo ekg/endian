@@ -11,12 +11,13 @@ inline int IsBigEndian()
     return !u.c[0];
 }
 
-/* or (pedantic non-UB version) */
+/* or (pedantic non-UB version)
 inline int IsBigEndian()
 {
     int i=1;
     return ! *((char *)&i);
 }
+*/
 
 // from http://stackoverflow.com/a/4956493/238609
 template <typename T>
