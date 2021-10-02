@@ -1,5 +1,4 @@
-
-
+namespace endian {
 // from http://stackoverflow.com/a/8979034/238609
 inline int IsBigEndian()
 {
@@ -55,4 +54,5 @@ T to_little_endian(T u)
     } else {
         return swap_endian<T>(u);
     }
+}
 }
